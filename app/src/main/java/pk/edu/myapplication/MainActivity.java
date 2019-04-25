@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(Intent.ACTION_VIEW);
-                newIntent.setData(Uri.parse("https:www.google.com"));
+                Intent newIntent = new Intent(MainActivity.this, SecondActivity.class );
                 startActivity(newIntent);
             }
         });
